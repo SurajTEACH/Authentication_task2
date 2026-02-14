@@ -15,7 +15,8 @@ app.use(cookieParser());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://authentication-task2-1.onrender.com"
+     process.env.CLIENT_URL
+
   ],
   credentials: true
 }));
